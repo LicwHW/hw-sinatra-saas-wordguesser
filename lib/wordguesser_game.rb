@@ -15,7 +15,6 @@ class WordGuesserGame
   end
 
   def guess (word)
-    puts ((word =~ /[a-zA-Z]$/) == 0 and word.length == 1)
     if not ((word =~ /[a-zA-Z]/) == 0 and word.length == 1)
       raise ArgumentError, 'The input must be a letter'
     end 
