@@ -15,7 +15,7 @@ class WordGuesserGame
   end
 
   def guess (word)
-    if not word =~ /[a-zA-Z]/
+    if (word =~ /[a-zA-Z]$/) != 0
       raise ArgumentError, 'The input must be a letter'
     end 
     right_word = @word.downcase
